@@ -19,7 +19,7 @@
     2.5,
     3.5
   ],
-  "refer_threshold": 0.3,
+  "refer_threshold": 0.5,
   "quality": {
     "min_sharpness": 15.0,
     "min_brightness": 25.0,
@@ -27,22 +27,22 @@
   },
   "trained_on": "aptos224, 80% stratified split, seed 42",
   "trained": "2026-11-02",
-  "run": "C_cls_none",
+  "run": "C_cls_none_v2",
   "epochs": 15,
   "lr": 0.0003,
   "class_weights": "none",
   "quality_stats": {
     "sharpness": {
-      "0.02": 4.1,
-      "0.5": 11.2,
-      "0.98": 21.6
+      "0.02": 60.5,
+      "0.5": 333.3,
+      "0.98": 752.3
     },
     "brightness": {
-      "0.02": 41.2,
-      "0.5": 92.4,
-      "0.98": 125.4
+      "0.02": 41.5,
+      "0.5": 92.7,
+      "0.98": 125.9
     }
   },
-  "val_kappa": 0.8378,
+  "val_kappa": 0.8389,
   "best_epoch": 10
 }

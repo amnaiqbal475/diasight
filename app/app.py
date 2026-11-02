@@ -11,8 +11,7 @@ from diasight import advice, gradcam, model as model_lib, predict, quality, repo
 from diasight.config import ASSETS_DIR, GRADE_COLOURS, SAMPLES_DIR
 from diasight.preprocess import load_rgb
 
-st.set_page_config(page_title="DiaSight", page_icon="👁️", layout="wide")
-
+st.set_page_config(page_title="DiaSight", page_icon="app/assets/logo.png", layout="wide")
 # ---------- look and feel ----------
 CSS = """
 <style>
