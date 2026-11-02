@@ -1,0 +1,6 @@
+grade,n,sensitivity,specificity,F1
+0 No DR,361,0.958,0.96,0.958
+1 Mild,74,0.595,0.927,0.53
+2 Moderate,200,0.775,0.884,0.743
+3 Severe,39,0.308,0.976,0.353
+4 Proliferative,59,0.322,0.978,0.409

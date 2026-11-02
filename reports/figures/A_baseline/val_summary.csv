@@ -1,0 +1,7 @@
+,value,95% CI low,95% CI high
+Refer sensitivity,0.799,0.749,0.842
+Refer specificity,0.798,0.76,0.834
+Refer AUC,0.889,0.866,0.91
+Quadratic weighted kappa,0.58,0.521,0.634
+Macro-F1 (5 grades),0.454,0.413,0.488
+Accuracy (not used to judge),0.604,0.568,0.639

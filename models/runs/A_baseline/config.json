@@ -1,0 +1,48 @@
+{
+  "model_name": "efficientnet_b0",
+  "img_size": 224,
+  "head": "classification",
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "ben_graham_sigma": 10,
+  "reg_thresholds": [
+    0.5,
+    1.5,
+    2.5,
+    3.5
+  ],
+  "refer_threshold": 0.5,
+  "quality": {
+    "min_sharpness": 15.0,
+    "min_brightness": 25.0,
+    "max_brightness": 230.0
+  },
+  "trained_on": "aptos224, 80% stratified split, seed 42",
+  "trained": "2026-11-02",
+  "run": "A_baseline",
+  "epochs": 8,
+  "lr": 0.0001,
+  "class_weights": "inverse",
+  "quality_stats": {
+    "sharpness": {
+      "0.02": 4.1,
+      "0.5": 11.2,
+      "0.98": 21.6
+    },
+    "brightness": {
+      "0.02": 41.2,
+      "0.5": 92.4,
+      "0.98": 125.4
+    }
+  },
+  "val_kappa": 0.5802,
+  "best_epoch": 4
+}
