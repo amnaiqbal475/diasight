@@ -268,7 +268,13 @@ def main():
            "refer_threshold": 0.5 if args.head == "classification" else 1.5,
            "trained_on": f"{data_dir.name}, 80% stratified split, seed {SEED}", "trained": str(date.today()),
            "run": name, "epochs": args.epochs, "lr": args.lr, "class_weights": args.weights,
-           "quality_stats": q.to_dict()}
+           "quality_stats": q.to_dict(),
+           # Reject photos worse than the 2nd percentile of real dataset photos (rounded down).
+           # max_brightness stays at the fixed "washed out" limit: the dataset's 98th percentile (~130)
+           # would wrongly reject brighter cameras, e.g. IDRiD.
+           "quality": {"min_sharpness": float(np.floor(q.loc[0.02, "sharpness"])),
+                       "min_brightness": float(np.floor(q.loc[0.02, "brightness"])),
+                       "max_brightness": DEFAULT_CONFIG["quality"]["max_brightness"]}}
     print(f"5. Training run '{name}': {args.model} at {args.size}px, {args.head} head, "
           f"{args.weights} class weights, up to {args.epochs} epochs, lr {args.lr}")
     best_k, P, history, best_epoch = train(args, tr, va, cfg)

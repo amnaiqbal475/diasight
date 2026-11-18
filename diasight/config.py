@@ -22,6 +22,7 @@ DEFAULT_CONFIG = {
     # refer if refer_score >= refer_threshold
     # classification: refer_score = P(grade >= 2); regression: refer_score = raw score
     "refer_threshold": 0.5,
-    # PLACEHOLDERS until calibrated on dataset images (2nd percentile), see quality.calibrate
-    "quality": {"min_sharpness": 15.0, "min_brightness": 25.0, "max_brightness": 230.0},
+    # Demo-mode fallback only. scripts/train.py writes calibrated values (2nd percentile of dataset
+    # photos) into models/config.json; the current model uses sharpness 10, brightness 41.
+    "quality": {"min_sharpness": 10.0, "min_brightness": 41.0, "max_brightness": 230.0},
 }

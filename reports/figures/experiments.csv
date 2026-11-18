@@ -4,3 +4,4 @@ B_cls_sqrt,2026-11-02,efficientnet_b0,224,classification,sqrt,15,0.0003,8,0.81,0
 C_cls_none,2026-11-02,efficientnet_b0,224,classification,none,15,0.0003,10,0.838,0.869,0.945,0.974,0.599
 D_reg_none,2026-11-02,efficientnet_b0,224,regression,none,15,0.0003,10,0.779,0.758,0.949,0.952,0.495
 C_cls_none_v2,2026-11-02,efficientnet_b0,224,classification,none,15,0.0003,10,0.839,0.839,0.952,0.976,0.603
+E_b3_384,2026-11-12,efficientnet_b3,384,classification,none,15,0.0003,12,0.896,0.936,0.936,0.981,0.675

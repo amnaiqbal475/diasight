@@ -1,0 +1,7 @@
+,APTOS validation,idrid (external),change
+Refer sensitivity,0.936,0.839,-0.097
+Refer specificity,0.936,0.907,-0.029
+Refer AUC,0.981,0.941,-0.04
+Quadratic weighted kappa,0.896,0.751,-0.145
+Macro-F1 (5 grades),0.675,0.48,-0.195
+Accuracy (not used to judge),0.835,0.589,-0.246

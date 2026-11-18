@@ -1,6 +1,6 @@
 {
-  "model_name": "efficientnet_b0",
-  "img_size": 224,
+  "model_name": "efficientnet_b3",
+  "img_size": 384,
   "head": "classification",
   "mean": [
     0.485,
@@ -19,30 +19,30 @@
     2.5,
     3.5
   ],
-  "refer_threshold": 0.5,
+  "refer_threshold": 0.4,
   "quality": {
-    "min_sharpness": 15.0,
-    "min_brightness": 25.0,
+    "min_sharpness": 10.0,
+    "min_brightness": 41.0,
     "max_brightness": 230.0
   },
-  "trained_on": "aptos224, 80% stratified split, seed 42",
-  "trained": "2026-11-02",
-  "run": "C_cls_none_v2",
+  "trained_on": "aptos, 80% stratified split, seed 42",
+  "trained": "2026-11-12",
+  "run": "E_b3_384",
   "epochs": 15,
   "lr": 0.0003,
   "class_weights": "none",
   "quality_stats": {
     "sharpness": {
-      "0.02": 60.5,
-      "0.5": 333.3,
-      "0.98": 752.3
+      "0.02": 10.4,
+      "0.5": 55.3,
+      "0.98": 101.3
     },
     "brightness": {
       "0.02": 41.5,
-      "0.5": 92.7,
+      "0.5": 92.8,
       "0.98": 125.9
     }
   },
-  "val_kappa": 0.8389,
-  "best_epoch": 10
+  "val_kappa": 0.8963,
+  "best_epoch": 12
 }

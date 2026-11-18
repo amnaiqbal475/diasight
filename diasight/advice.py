@@ -11,7 +11,15 @@ ADVICE = {
     4: ("Urgent: see an eye doctor as soon as possible.",
         "فوری طور پر آنکھوں کے ڈاکٹر سے ملیں۔"),
 }
-DISCLAIMER = "Screening tool, not a diagnosis. An eye doctor always makes the final decision."
+# Short follow-up line per grade, shown under the decision in the app.
+FOLLOW_UP = {
+    0: "Routine re-screen in 12 months",
+    1: "Re-screen in 6 to 12 months",
+    2: "Eye doctor within the next few weeks",
+    3: "Eye doctor this week",
+    4: "Urgent: eye doctor as soon as possible",
+}
+DISCLAIMER ="Screening tool, not a diagnosis. An eye doctor always makes the final decision."
 
 
 def get(grade: int):
