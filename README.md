@@ -5,7 +5,21 @@ grade 0–4, refer / no-refer (grade 2 or higher = refer), Grad-CAM heatmap, adv
 
 > Screening tool, not a diagnosis. Course prototype (AI/ML capstone, Zainab & Amna); not for clinical use.
 
-## Run the app
+## Quick start (Windows)
+
+1. Install **Python 3.11 or newer** from [python.org](https://www.python.org/downloads/) and tick
+   "Add python.exe to PATH".
+2. Clone the repo: `git clone https://github.com/amnaiqbal475/diasight.git`
+3. Get the trained model `best.pt` from the team and put it in `models/` (next to `config.json`).
+   Without it the app still runs, but in demo mode with meaningless results.
+4. Optional: put the sample photos (`grade0_….png` to `grade4_….png`) in `app/samples/`.
+5. Double-click **`run.bat`**. The first run installs everything (5 to 10 minutes, needs internet); after that it
+   starts in seconds and opens the app at http://localhost:8501.
+
+The model weights and dataset images are not in Git: weights are large binaries, and APTOS/IDRiD images are
+licensed by their owners, so everyone downloads those themselves.
+
+## Run the app (any OS)
 
 ```bash
 python -m venv .venv
